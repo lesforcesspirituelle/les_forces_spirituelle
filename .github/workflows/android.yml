@@ -23,8 +23,8 @@ jobs:
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
 
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug
+      - name: Build Debug APK (verbose)
+        run: ./gradlew assembleDebug --stacktrace --info --no-daemon
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
