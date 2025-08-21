@@ -1,0 +1,18 @@
+# 1. Créer un fichier .gitignore adapté à Android
+echo "
+/.gradle/
+/build/
+/app/build/
+/local.properties
+/.idea/
+/*.iml
+" > .gitignore
+
+# 2. Ajouter le .gitignore dans Git
+git add .gitignore
+
+# 3. Faire un commit
+git commit -m "Ajout du .gitignore Android"
+
+# 4. Envoyer sur GitHub
+git push origin main
